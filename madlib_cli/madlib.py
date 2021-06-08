@@ -34,7 +34,7 @@ def parse_template(s):
 def inputs(text_in_brackets):
     answers = []
     for question in range(len(text_in_brackets)):
-        a = input(f'please Enter {text_in_brackets[question]}')
+        a = input(f'please Enter {text_in_brackets[question]} ')
         answers.append(a)
     return answers
     
@@ -48,4 +48,4 @@ def merge(answers,s,text_in_brackets):
     except:
         return 'merging error'
 route = '../assets/template.txt'
-print(render(route))
+render(route)
