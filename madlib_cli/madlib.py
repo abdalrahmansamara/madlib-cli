@@ -1,7 +1,7 @@
 import re
 
 # goal 0 => create a function that is responsible for all the rendering
-
+print('Welcome to madlib, a functionality that allows you to play a fun game based on your inputs!')
 def render(route):
     file_content = read_template(route)
     text_in_brackets = parse_template(file_content)
