@@ -14,7 +14,7 @@ def render(route):
 def read_template(route):
     try:
         with open(route) as file:
-            s = file.read()
+            s = file.read().strip()
             return s
     except FileNotFoundError:
         return 'file not found'
